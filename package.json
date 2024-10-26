@@ -1,4 +1,7 @@
 {
+	"scripts": {
+		"start": "nodemon index.ts"
+	},
 	"dependencies": {
 		"express": "^4.21.1"
 	},
