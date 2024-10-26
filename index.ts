@@ -3,7 +3,8 @@ import reminderRouter from "./routers/reminder";
 
 const app = express();
 
-app.use('/reminders', reminderRouter)
+app.use(express.json());
+app.use('/reminders', reminderRouter);
 
 app.get('/', (req, res) => {
     res.send('Hello world!');
